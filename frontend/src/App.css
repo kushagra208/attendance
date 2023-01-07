@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+.App{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.input{
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000c4;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0px 20px 20px 0px black;
+}
+
+.input h1{
+  color:white;
+  font-family:'Moon Dance';
+  font-size: 40px;
+}
+.output{
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 300px; */
+  margin: 50px;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.form input{
+  width: 200px;
+  /* height: 30px; */
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.form button{
+  width: 100px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+
+}
+
+.table{
+  display: block;
+  padding: 10px;
+  border: 1px solid black;
+  border-spacing: 30px 20px;
+  border-radius: 10px;
+  height: 80vh;
+  overflow-y: scroll;
+  box-shadow: 0px 10px 10px 0px black;
+  margin: 70px;
+
+}
+
+.btns{
+  display: flex;
+  gap: 10px;
+  flex-direction: initial;
+  margin: 10px;
+}
+
+.form button:hover{
+  background-color: #000000c4;
+  color: white;
+  cursor: pointer;
+}
+
+.table tr{
+  height: 20px;
+}
