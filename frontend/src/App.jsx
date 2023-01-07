@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   const [data, setData] = useState([]);
-  const [button, setButton] = useState(0);
+  const [total, setTotal] = useState(0);
   const checkIn = e => {
     e.preventDefault();
     
@@ -65,6 +65,16 @@ function App() {
     });
   }
   useEffect(() => {
+    function student_count(){
+    var count = 0;
+    data.map(student => {
+      if (student.checkOutTime === ""){
+        count += 1
+      };
+      setTotal(count);
+    })}
+
+    student_count();
 
   }, [data])
   
@@ -122,6 +132,10 @@ function App() {
           ))}
         </tbody>
       </table>
+      <div className='total'>
+        <h2>Total Students:</h2>
+        <p>{total}</p>
+      </div>
     </div>
 
 
